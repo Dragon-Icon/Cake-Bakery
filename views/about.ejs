@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="./Img/Logo.png" type="image/x-icon">
+    <script src="./External/typed.js-master/lib/typed.min.js"></script>
+    <script src="JS/extranceHome.js" defer></script>
+    <script src="JS/app.js" defer></script>
+
+    <title>The Cake Bakery</title>
+</head>
+<body>
+    
+        <nav>
+           <i class="fas fa-bars" onclick="slide()" style="color: rgb(65, 65, 65);"></i>
+            <div class="sidebar">
+                <div class="mainside">
+                    <p id="closeBTN">&times</p>
+                    <ul>
+                        <li><a href="./quiz#main" class="list-link">Quiz</a></li>
+                        <li><a href="./index" class="list-link">Home</a></li>
+                        <li><a href="./cake" class="list-link">Cakes</a></li>
+                        <li><a href="./recipe" class="list-link" id="recipeLink" onmouseenter="block()" onmouseleave="none()">Recipe</a></li>
+                        <li><a href="./about" class="list-link">About</a></li>
+                        <li><a href="contact">Contact Us</a></li>
+                        <li><a href="<%= LoginLogout %>"><%= LoginLogout %></a></li>
+                        <li><a href="<%=link%>"><%= signup %></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <main id="main" style="height: 100vh;" class="aboutMain">
+        <div class="aboutUs">
+            <div class="img">
+                <img src="Img/niraj.jpg" alt="">
+            </div>
+            <div class="aboutDes">
+                <h1 style="font-size: 2.5rem; text-align: center;margin-bottom: 1rem;">About Us</h1>
+                <p>The owner of The Cake Bakery is Niraj Mulmi. Niraj loves to bake cakes. He is 43 years old but his age isn't stopping him from baking cakes. Niraj was born in Kathmandu Nepal and is now currently living in New Zealand.<br><br> Niraj loved baking cakes so much that he baked cakes for every occasion including his own birthday. Niraj's main goal for this website is to share his cakes and wants to teach children or anyone how to bake cakes. He wants teach children because he wants to help parents by trying to make children do something productive instead of playing video games or watching their phone.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footernav">
+            <ul class="footerlist">
+                <li><a href="./index">Home</a></li>
+                <li><a href="cake">Cakes</a></li>
+                <li><a href="./recipe">Recipe</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact"><i class="far fa-user-circle"></i></a></li>
+            </ul>
+            <a href="https://www.facebook.com/adityaa.mulmi"><img src="./Img/facebook-logo.png" alt="facebook-logo" class="flogo"></a>
+            <a href="https://www.instagram.com/_dragon_icon_/"><img src="./Img/instagram-logo.jpg" alt="instagram=logo" class="ilogo"></a>
+        </div>
+        <img class="footerlogo" src="./Img/Logo.png" alt="Logo">
+        <div class="contact">
+            <p>Contact</p>
+            <p>
+                Section 3<br> 48 Taitimu Dr Weymouth 2103<br>Email:<br>mulmiadityaa<br>@gmail.com<br>
+                <a href="tel:+64225864394">phone: 64+<br>
+                22 5864 394</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/quiz.css">
+    <link rel="shortcut icon" href="./Img/Logo.png" type="image/x-icon">
+    <script src="./External/typed.js-master/lib/typed.min.js"></script>
+    <script src="JS/extranceHome.js" defer></script>
+    <script src="JS/app.js" defer></script>
+    <script src="JS/quiz.js" defer></script>
+    <title>The Cake Bakery</title>
+</head>
+<body>
+    <div class="mainpage">
+        <header>
+            <a href="./index" id="logo">The Cake Bakery</a>
+            <h1 class="display"></h1>
+            <div class="more">
+                <button id="more">Take The Quiz</button>
+            </div>
+        </header>
+    
+        <nav>
+            <i class="fas fa-bars" onclick="slide()"></i>
+             <div class="sidebar">
+                 <div class="mainside">
+                     <p id="closeBTN">&times</p>
+                     <ul>
+                         <li><a href="./quiz#main" class="list-link">Quiz</a></li>
+                         <li><a href="./index" class="list-link">Home</a></li>
+                         <li><a href="./cake" class="list-link">Cakes</a></li>
+                         <li><a href="./recipe" class="list-link" id="recipeLink" onmouseenter="block()" onmouseleave="none()">Recipe</a></li>
+                         <li><a href="./about" class="list-link">About</a></li>
+                         <li><a href="contact">Contact Us</a></li>
+                         <li><a href="<%= LoginLogout %>"><%= LoginLogout %></a></li>
+                         <li><a href="<%=link%>"><%= signup %></a></li>
+                     </ul>
+                 </div>
+             </div>
+         </nav>
+    </div>
+    <main id="main" style="height: 100vh;" class="quizMain">
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <h2 id="question">Question text</h2>
+                <ul class="questions">
+                    <li>
+                        <input
+                            type="radio"
+                            id="a"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="a_text" for="a">Question</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            id="b"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="b_text" for="b">Question</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            id="c"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="c_text" for="c">Question</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            id="d"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="d_text" for="d">Question</label>
+                    </li>
+                </ul>
+            </div>
+            <button id="submit"><span class="front">Submit</span></button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footernav">
+            <ul class="footerlist">
+                <li><a href="./index">Home</a></li>
+                <li><a href="cake">Cakes</a></li>
+                <li><a href="./recipe">Recipe</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact"><i class="far fa-user-circle"></i></a></li>
+            </ul>
+            <a href="https://www.facebook.com/adityaa.mulmi"><img src="./Img/facebook-logo.png" alt="facebook-logo" class="flogo"></a>
+            <a href="https://www.instagram.com/_dragon_icon_/"><img src="./Img/instagram-logo.jpg" alt="instagram=logo" class="ilogo"></a>
+        </div>
+        <img class="footerlogo" src="./Img/Logo.png" alt="Logo">
+        <div class="contact">
+            <p>Contact</p>
+            <p>
+                Section 3<br> 48 Taitimu Dr Weymouth 2103<br>Email:<br>mulmiadityaa<br>@gmail.com<br>
+                <a href="tel:+64225864394">phone: 64+<br>
+                22 5864 394</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

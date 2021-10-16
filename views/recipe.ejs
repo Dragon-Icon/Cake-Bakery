@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="./Img/Logo.png" type="image/x-icon">
+    <script src="./JS/app.js" defer></script>
+    <script src="./JS/entranceRecipe.js" defer></script>
+    <script src="./External/typed.js-master/lib/typed.min.js"></script>
+    <title>Recipe</title>
+</head>
+<body>
+    <div class="mainpage">
+        <header>
+            <a href="./index" id="logo">The Cake Bakery</a>
+            <h1 class="display"></h1>
+            <div class="more">
+                <button id="more">Recipe</button>
+            </div>
+        </header>
+    
+        <nav>
+            <i class="fas fa-bars" onclick="slide()"></i>
+             <div class="sidebar">
+                 <div class="mainside">
+                     <p id="closeBTN">&times</p>
+                     <ul>
+                         <li><a href="./quiz#main" class="list-link">Quiz</a></li>
+                         <li><a href="./index" class="list-link">Home</a></li>
+                         <li><a href="./cake" class="list-link">Cakes</a></li>
+                         <li><a href="./recipe" class="list-link" id="recipeLink" onmouseenter="block()" onmouseleave="none()">Recipe</a></li>
+                         <li><a href="./about" class="list-link">About</a></li>
+                         <li><a href="contact">Contact Us</a></li>
+                         <li><a href="<%= LoginLogout %>"><%= LoginLogout %></a></li>
+                         <li><a href="<%=link%>"><%= signup %></a></li>
+                     </ul>
+                 </div>
+             </div>
+         </nav>
+
+
+    </div>
+    <main id="main">
+        <div class="cheesecakeRecipe" id="cheesecakeRecipe">
+            <div class="flex">
+                <p>
+                    <span class="question">What is a Cheese Cake?</span><br>
+                    Cheesecakes are made-up from two or three components layered in a special pan called a Springform or in a solid baking pan: optionally, a crust on the bottom, sometimes prebaked; a filling, in the middle, which can be savory or sweet; and optionally including a topping, such as fruit, sour cream, cookie crumbs or chocolate. Its filling is really baked custard, based on an egg protein structure, which sets into a semi-rigid gel, and needs to be treated as such.
+                </p>
+                <img class="cheesecakeImg" src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/11/26/0/FNK_Carrot-Cake-Cheesecakes_s4x3.jpg.rend.hgtvcom.616.462.suffix/1386172247565.jpeg" alt="cheesecake">
+            </div>
+            <hr>
+            <div class="ingredientsMethod">
+                <div class="ingredients">
+                <h2>Ingredients</h2>
+                    <p>For The Cake:<br>
+                        250g digestive biscuits<br>
+                        100g butter, melted<br>
+                        1 vanilla pod<br>
+                        600g full fat soft cheese<br>
+                        100g icing sugar<br>
+                        284ml pot of double cream<br>
+                    </p><br>
+                    <p>For The Topping: <br>
+                        400g punnet of strawberries, halved<br>
+                        25g icing sugar<br>
+                    </p>
+                    <img src="./Img/wix-ad.png" alt="ad" class="wix">
+                    <img src="./Img/ronaldo meme.jpg" alt="meme">
+                    <img src="./Img/xavi penalty meme.jpg" alt="meme" class="xavi">
+                </div>
+                <div class="method">
+                    <h2>Method</h2>
+                    <h3>Step 1</h3>
+                    <p>To make the base, butter and line a 23cm loose-bottomed tin with baking parchment. Put the digestive biscuits in a plastic food bag and crush to crumbs using a rolling pin. Transfer the crumbs to a bowl, then pour over the melted butter. Mix thoroughly until the crumbs are completely coated. Tip them into the prepared tin and press firmly down into the base to create an even layer. Chill in the fridge for 1 hr to set firmly.</p>
+                    <br><h3>Step 2</h3>
+                    <p> Slice the vanilla pod in half lengthways, leaving the tip intact, so that the two halves are still joined. Holding onto the tip of the pod, scrape out the seeds using the back of a kitchen knife.</p>
+                    <br><h3>Step 3</h3>
+                    <p>Pour the double cream into a bowl and whisk with an electric mixer until it’s just starting to thicken to soft peaks. Place the soft cheese, icing sugar and the vanilla seeds in a separate bowl, then beat for 2 mins with an electric mixer until smooth and starting to thicken, it will get thin and then start to thicken again. Tip in the double cream and fold it into the soft cheese mix. You’re looking for it to be thickened enough to hold its shape when you tip a spoon of it upside down. If it’s not thick enough, continue to whisk. Spoon onto the biscuit base, starting from the edges and working inwards, making sure that there are no air bubbles. Smooth the top of the cheesecake down with the back of a dessert spoon or spatula. Leave to set in the fridge overnight.</p>
+                    <br><h3>Step 4</h3>
+                    <p>Bring the cheesecake to room temperature about 30 mins before serving. To remove it from the tin, place the base on top of a can, then gradually pull the sides of the tin down. Slip the cake onto a serving plate, removing the lining paper and base. Purée half the strawberries in a blender or food processor with the icing sugar and 1 tsp water, then sieve. Pile the remaining strawberries onto the cake, and pour the purée over the top.</p>
+                </div>
+                <div class="filler">
+                    <img src="https://img.huffingtonpost.com/asset/5b9ddd7a1f00002c0021c779.gif?ops=scalefit_960_noupscale" alt="gif">
+                    <img src="https://cdn.dribbble.com/users/1109804/screenshots/3330397/cake-natalka-dmitrova.gif" alt="gif">
+                    <a onclick="window.open(`https:/www.exitlag.com`, '_blank')"><img src="./Img/exit-lag-ad.png" alt="ad"></a>
+                    <img src="./Img/gmail-ad.png" alt="ad" class="gmail" style="width: 12rem;
+                    height: 100vh; position: relative; left: 5rem;">
+                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="blackforestRecipe" id="blackforestRecipe">
+            <div class="flex">
+                <p>
+                    <span class="question">What is a Black Forest?</span><br>
+                    Black forest cake, which originated in the Black Forest region of Germany, is typically made with a light chocolate sponge cake, soaked with cherry syrup and cherry brandy (Kirsch), then layered with whipped cream and cherries. This version swaps the chocolate sponge for a denser, fudgier chocolate cake to delicious effect. But slicing a rich chocolate cake into four thin layers can be a bit tricky. To make the job a little easier, cool them completely before slicing. The cherry jam and syrup can be made in advance.
+                </p>
+                <img class="cheesecakeImg" src="https://3.bp.blogspot.com/-1mlvtAHfYxU/WGMCIdlLuOI/AAAAAAAACKw/ehLubLmJmrYSt5TiW1O5oqaPW9REuGhvwCLcB/s1600/DSC07710.JPG" alt="blackForest">
+            </div>
+            <hr>
+            <div class="ingredientsMethod">
+                <div class="ingredients">
+                    <h2>Ingredients</h2>
+                    <p>For The Cake:<br>
+                        1 cup/240 milliliters vegetable oil, plus more for greasing the pans<br>
+                        1 ½ cups/140 grams Dutch-process cocoa powder<br>
+                        1 ½ cups/360 milliliters boiling water<br>
+                        1 cup/240 milliliters buttermilk<br>
+                        4 large eggs<br>
+                        1 ½ cups/330 grams packed dark brown sugar<br>
+                        1 ½ teaspoons pure vanilla extract<br>
+                        3 cups/385 grams all-purpose flour<br>
+                        1 tablespoon baking powder<br>
+                        1 ½ teaspoons kosher salt<br>
+                        ¾ teaspoon baking soda<br><br>
+                        For The Jam:<br>
+                        4 cups (about 20 ounces/600 grams) fresh or frozen dark sweet cherries, pitted<br>
+                        ½ cup/100 grams granulated sugar<br>
+                        1 teaspoon cornstarch<br>
+                        ¼ teaspoon almond extract<br>
+                        1 to 2 tablespoons Kirsch<br><br>
+                        For The Whipped Cream:<br>
+                        ⅓ cup/40 grams confectioners’ sugar<br>
+                        1 tablespoon cornstarch<br>
+                        4 cups/960 milliliters heavy cream<br>
+                        6 ounces/170 grams bittersweet chocolate, shaved into curls<br>
+                        8 fresh or frozen whole dark sweet cherries, pitted<br>
+                    </p>
+                    
+                </div>
+                <div class="method">
+                    <h2>Method</h2><br>
+                    <h3>Step 1</h3>
+                    <p> Heat the oven to 350 degrees. Grease two 9-inch round cake pans with oil and line the bottom of each with parchment paper.</p>
+                    <br><h3>Step 2</h3>
+                    <p> To prepare the cake, in a large bowl, whisk together the cocoa powder and boiling water until smooth. Add the buttermilk and 1 cup vegetable oil, and whisk to combine. Add the eggs, brown sugar and vanilla extract, then whisk to combine.</p>
+                    <br><h3>Step 3</h3>
+                    <p>In a medium bowl, whisk together the flour, baking powder, salt and baking soda. Add the dry ingredients to the wet, then whisk to combine. Divide the batter evenly between the two pans.</p>
+                    <br><h3>Step 4</h3>
+                    <p>Bake until a toothpick inserted into the center comes out clean, 30 to 35 minutes. Transfer the cakes to a rack to cool for about 20 minutes, then flip the cakes out onto the rack and let them cool completely. Flip the cakes again, so the domed portion is on top, and trim a bit of the dome off each cake to flatten the top. Carefully cut each layer in half horizontally, creating four layers.</p>
+                    <br><h3>Step 5</h3>
+                    <p>While the cake cools, prepare the cherry jam: In a small saucepan, combine the cherries and sugar over medium heat. Cook, stirring occasionally and breaking the cherries down with a wooden spoon or potato masher, until the fruit has released its juice, about 6 minutes.</p>
+                    <br><h3>Step 6</h3>
+                    <p>Pass the cherry mixture through a fine-mesh sieve, reserving the syrup in a medium bowl and setting aside the cooked cherries. Measure out 1/2 cup/120 milliliters of the syrup. (If you have more, store the rest in the refrigerator for another use). Transfer 1 tablespoon syrup from the 1/2 cup to small bowl, then stir the Kirsch into remaining syrup; set aside to cool completely.</p>
+                    <br><h3>Step 7</h3>
+                    <p>Add 1 teaspoon cornstarch to the reserved 1 tablespoon cherry syrup in the small bowl; whisk to combine. Transfer it to the saucepan, add the cooked cherries and cook over medium, stirring, until the mixture has thickened, 3 to 5 minutes. Transfer to a bowl to cool completely. (You should have about 1 1/4 cups/300 milliliters jam.)</p>
+                    <br><h3>Step 8</h3>
+                    <p>Prepare the whipped cream: In a small saucepan, whisk together the confectioners’ sugar, cornstarch and 1 cup heavy cream. Bring that mixture to a low boil over medium heat and cook, stirring, until thickened to the consistency of thin pudding, reducing heat as necessary to avoid scorching, about 2 minutes. Transfer cream mixture to a large bowl to cool completely.</p>
+                    <br><h3>Step 9</h3>
+                    <p>Assemble the cake: Whisk the cream mixture to loosen it, then add the remaining 3 cups heavy cream. Using an electric mixer on medium, beat the mixture until you have medium-stiff peaks, about 2 minutes. Set one cake layer on a serving plate, cut-side up. Brush it with some of the cherry-Kirsch syrup, spread about 1 cup whipped cream over the top, then 1/3 of the cherry jam. Swirl the jam and the cream together a bit to spread it out evenly. Repeat this process two more times and top it with the last cake layer, cut-side down. Then cover the entire cake with a thin layer of whipped cream. Refrigerate for 30 minutes.</p>
+                    <br><h3>Step 10</h3>
+                    <p>To finish, frost the cake with the remaining whipped cream. Prepare the chocolate curls: Warm the chocolate bar in the microwave for 10 to 15 seconds, then use a vegetable peeler to create curled chocolate shavings. Press the chocolate shavings onto the sides of the cake and over a 1-inch of the border on top. Top with the 8 cherries. Store leftovers, well wrapped, in the refrigerator for up to 3 days.</p>
+                </div>
+                <div class="filler">
+                    <img src="./Img/nigga-cake.jpg" alt="nigga-cake" style="width:17rem;margin-left: 10rem;">
+                    <img src="./Img/wix-ad.png" alt="ad" class="gmail" style="width: 12rem;
+                    height: 100vh; position: relative; left: 5rem;">
+                    <img src="./Img/red birthday cake.jpg" alt="bcake" style="border-radius: 80px;"> 
+                    img=assfasdf
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="cheesecakeRecipe" id="bananacakeRecipe">
+            <div class="flex">
+                <p>
+                    <span class="question">What is a Banana Cake?</span><br>
+                    Banana cake according to history have been invented during the Depression era of the 1930’s by housewives finding other means of making some extra money at home, during this time baking soda and baking powder is also starting to get popular which was a key ingredient in making this cakes. Since this was the depression era, every grocery also find other ways in getting some extra money by selling their overripe bananas and giving away free recipes that uses them like muffins and pancakes. Though all of those efforts were made it did not become highly popular but many cookbooks started to publish recipes for this cake, then the 1960’s came and that was the home baking revival period, that led the fast popularity of banana cakes due to the simplicity of its preparation and the number available recipes in cookbooks.
+                </p>
+                <img class="cheesecakeImg" src="https://static.fanpage.it/wp-content/uploads/sites/22/2020/02/CARAMEL-BANANA-CAKE-024-1200x1200.jpg" alt="Banana Cake">
+            </div>
+            <hr>
+            <div class="ingredientsMethod">
+                <div class="ingredients">
+                    <h2>Ingredients</h2>
+                    <p>For The Cake:<br>
+                        2 1/2 cup all purpose flour<br>
+                        150 ml buttermilk<br>
+                        100 gm unsalted butter<br>
+                        2 egg<br>
+                        1 pinch salt<br>
+                        4 banana<br>
+                        150 gm brown sugar<br>
+                        1 cup sugar<br>
+                        1 tablespoon baking soda<br>
+                        1/2 cup walnuts<br>
+                    </p>
+                </div>
+                <div class="method">
+                    <h2>Method</h2><br>
+                    <h3>Step 1</h3>
+                    <p>To prepare this delicious tea cake recipe, preheat the oven at 180 degree Celsius. Take a loaf pan and line it with butter paper. If butter paper is not available, smear with oil or butter. Once done, take a little dry flour and dust the pan with it.</p>
+                    <br><h3>Step 2</h3>
+                    <p>For the cake batter, sift together all-purpose flour, salt, and baking soda in a large bowl. Keep this bowl aside until required. Now, take a large bowl and add unsalted butter in it along with brown sugar and white sugar. Using an electric beater, beat together all the ingredients until light and fluffy.</p>
+                    <br><h3>Step 3</h3>
+                    <p>Once the butter-sugar mixture is creamy, add egg, one at a time and then beat well once again. Afterwards, peel the bananas and add them to the mixture as well. Beat once again. Now, add the flour mixture to this bowl along with buttermilk, and beat one last time to make the batter. Make sure that no lumps are remaining. Once the batter is ready, add chopped walnuts in it and stir using a spoon.</p>
+                    <br><h3>Step 4</h3>
+                    <p>Transfer this cake batter in the greased pans and put them in the preheated ovens. Bake these banana cakes for about 20-30 minutes. After half an hour, take out the pans and let the cake cool at room temperature.</p>
+                </div>
+                <div class="filler">
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="cheesecakeRecipe" id="carrotcakeRecipe">
+            <div class="flex">
+                <p>
+                    <span class="question">What is a Carrot Cake?</span><br>
+                    The origins of carrot cake are not absolutely clear. Published in 1591, there is an English recipe for "pudding in a Carret root".  (A Book of Cookrye: Very Necessary for All Such as Delight Therin. Edward Allde, 1591). That recipe is essentially a stuffed carrot with meat, but it includes many elements common to the modern dessert: shortening, cream, eggs, raisins, sweetener (dates and sugar), spices (clove and mace), scraped carrot, and breadcrumbs (in place of flour). 
+                </p>
+                <img class="cheesecakeImg" src="https://www.simplyrecipes.com/thmb/BC2ZBdNadWPGxH-es3EaefL09ZM=/2557x1918/smart/filters:no_upscale()/Carrot-Cake-LEAD-3-81e1d3700f0241279f9ba4c2b8b6153c.jpg" alt="cheesecake">
+            </div>
+            <hr>
+            <div class="ingredientsMethod">
+                <div class="ingredients">
+                <h2>Ingredients</h2>
+                    <p>For The Cake:<br>
+                        3 cups carrot (450 g), hand-grated<br>
+                        2 ½ cups all-purpose flour (310 g), plus 1 tablespoon, divided<br>
+                        2 teaspoons ground cinnamon<br>
+                        ¼ teaspoon allspice<br>
+                        1 teaspoon kosher salt<br>
+                        1 teaspoon baking powder<br>
+                        ½ teaspoon baking soda<br>
+                        1 cup light brown sugar (200 g), packed<br>
+                        ½ cup granulated sugar (100 g)<br>
+                        3 large eggs, room temperature<br>
+                        1 cup vegetable oil (240 mL)<br>
+                        1 cup raisin (150 g)<br>
+                        1 cup crushed pineapple (225 g), canned
+                    </p><br>
+                    <p>For The Icing: <br>
+                        1 cup unsalted butter (225 g), (2 sticks) room temperature<br>
+                        12 oz cream cheese (340 g), room temperature<br>
+                        1 ½ teaspoons vanilla extract<br>
+                        2 cups powdered sugar (240 g)<br>
+                        2 cups walnuts (200 g), crushed<br>
+                    </p>
+                    <img src="./Img/wix-ad.png" alt="ad" class="wix">
+                </div>
+                <div class="method">
+                    <h2>Method</h2>
+                    <h3>Step 1</h3>
+                    <p>Preheat the oven to 350˚F (180˚C). Grease 3 8-inch (20 cm) round cake pans and line with parchment paper.</p>
+                    <br><h3>Step 2</h3>
+                    <p> Grate the carrots on the small holes of a box grater. Set aside.</p>
+                    <br><h3>Step 3</h3>
+                    <p>In a large bowl, sift together 2½ cups (310 G) of flour, the cinnamon, allspice, salt, baking powder, and baking soda. Whisk together.</p>
+                    <br><h3>Step 4</h3>
+                    <p>In a separate large bowl, beat the brown sugar, granulated sugar, and eggs together with an electric hand mixer on medium speed until just combined.</p>
+                    <br><h3>Step 5</h3>
+                    <p>With the mixer running, gradually pour in the vegetable oil.</p>
+                    <br><h3>Step 6</h3>
+                    <p>With the mixer on medium-low speed, add ⅓ of the flour mixture at a time to the wet ingredients. Beat just to incorporate. Stop mixing when there is just a small amount of flour visible.</p>
+                    <br><h3>Step 7</h3>
+                    <p>In a small bowl, toss the raisins with the remaining tablespoon of flour.</p>
+                    <br><h3>Step 8</h3>
+                    <p>Add the raisin, grated carrots, and pineapple to the batter and fold to incorporate with a rubber spatula.</p>
+                    <br><h3>Step 9</h3>
+                    <p>Divide the cake batter evenly between the prepared pans and smooth the tops.</p>
+                    <br><h3>Step 10</h3>
+                    <p>Bake for 25-30 minutes, until a fork inserted in the center of a cake comes out clean.</p>
+                    <br><h3>Step 11</h3>
+                    <p>Cool the cakes on a wire rack until the pans are cool to the touch. Remove the cakes from the pans and let cool completely on the rack.</p>
+                    <br><h3>Step 12</h3>
+                    <p>Make the icing: In a large bowl, beat together the butter, cream cheese, and vanilla with an electric hand mixer on medium-low speed. Once combined, mix on medium-high speed for 30 seconds, until light and fluffy.</p>
+                    <br><h3>Step 13</h3>
+                    <p>Add the powdered sugar, ½ cup (60 G) at a time, beating on medium-low speed to incorporate each addition.</p>
+                    <br><h3>Step 14</h3>
+                    <p>Assemble the cake: Check to see if the top of each cake is flat. If not, use a serrated knife level off the cakes.</p>
+                    <br><h3>Step 15</h3>
+                    <p>Place 1 cake layer on a serving platter or cake stand. Spoon ¼ of the icing on top and spread in an even layer. Add another layer of cake and spread with another ¼ of the icing. Set the last cake layer on top with the bottom up to ensure a very flat surface. Spread the rest of the icing over the top and sides.</p>
+                    <br><h3>Step 16</h3>
+                    <p>Gently press the walnuts into the icing around the sides of the cake.</p>
+                    <br><h3>Step 17</h3>
+                    <p>Chill for 30-60 minutes to let the icing set, then slice and serve.</p>
+
+                </div>
+                <div class="filler">
+                    <img src="https://img.huffingtonpost.com/asset/5b9ddd7a1f00002c0021c779.gif?ops=scalefit_960_noupscale" alt="gif">
+                    <img src="https://cdn.dribbble.com/users/1109804/screenshots/3330397/cake-natalka-dmitrova.gif" alt="gif">
+                    <a onclick="window.open(`https:/www.exitlag.com`, '_blank')"><img src="./Img/exit-lag-ad.png" alt="ad"></a>
+                    <img src="./Img/gmail-ad.png" alt="ad" class="gmail" style="width: 12rem;
+                    height: 100vh; position: relative; left: 5rem;">
+                    
+                </div>
+            </div>
+        </div>           
+    </main>
+    <footer>
+        <div class="footernav">
+            <ul class="footerlist">
+                <li><a href="./index">Home</a></li>
+                <li><a href="cake">Cakes</a></li>
+                <li><a href="./recipe">Recipe</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact"><i class="far fa-user-circle"></i></a></li>
+            </ul>
+            <a href="https://www.facebook.com/adityaa.mulmi"><img src="./Img/facebook-logo.png" alt="facebook-logo" class="flogo"></a>
+            <a href="https://www.instagram.com/_dragon_icon_/"><img src="./Img/instagram-logo.jpg" alt="instagram=logo" class="ilogo"></a>
+        </div>
+        <img class="footerlogo" src="./Img/Logo.png" alt="Logo">
+        <div class="contact">
+            <p>Contact</p>
+            <p>
+                Section 3<br> 48 Taitimu Dr Weymouth 2103<br>Email:<br>mulmiadityaa<br>@gmail.com<br>
+                <a href="tel:+64225864394">phone: 64+<br>
+                22 5864 394</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

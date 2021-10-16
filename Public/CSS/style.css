@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+:root {
+    --light: hotpink;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: poppins;
+    list-style: none;
+  
+}
+
+body{
+  background: rgb(255, 244, 223);
+}
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  .list{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    transition: opacity 1s ease ;
+    font-family: poppins;
+    position: absolute;
+    top: 4rem;
+  }
+  .list .list-link {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px 0;
+    font-size: 1.2rem;
+    margin: 0 2rem;
+    margin-right: 3rem;
+  }
+  
+  .list .list-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background: white;
+    transition: 0.4s ease-out;
+  }
+
+  
+  .list .list-link:hover::after
+  {
+    left: 0;
+    width: 100%;
+  }
+
+
+
+  .innerContact{
+    list-style: none;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 12px 12px ;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: none;
+  }
+
+  .innerContact a, .innerContact li{
+    color: white;
+    text-decoration: none;
+    transition: .5s ease color;
+  }
+
+  .innerContact a:hover, .innerContact li:hover{
+    color: hotpink;
+    cursor: pointer;
+  }
+  
+  .innerRecipe{
+    list-style: none;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    border-radius: 0 0 12px 12px ;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: none;
+  }
+  .innerRecipe a{
+    color: white;
+    text-decoration: none;
+    transition: .5s ease color;
+  }
+  .innerRecipe a:hover{
+    color: hotpink;
+  }
+  
+
+  input, textarea{
+    background: 
+      linear-gradient(to right, navy 40%, seagreen),
+      linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    border: none;
+    
+  }
+  
+  
+  input:focus, textarea:focus{
+    background-size: 0 0.1em, 100% 0.1em;
+    outline: none;
+  }
+
+  #show{
+    position: relative;
+    top: -1.5rem;
+    left: 45%;
+  }
+  #show:hover{
+    cursor: pointer;
+    color: hotpink;
+    transition: color .5s ease;
+  }
+  ::placeholder {
+    color: black;
+    opacity: 1; 
+  }
+
+
+  .close{
+    position: relative;
+    left: 8.5rem;
+  }
+
+  .close:hover{
+    cursor: pointer;
+    color: #39aff5;
+  }
+
+.mainpage{
+  height: 100vh;
+  background-image: url('https://c0.wallpaperflare.com/preview/1013/496/951/mockup-bakery-bread-pastry.jpg');
+  object-fit: cover;
+  background-size: 103%;
+}
+.display{
+  margin-top: 12rem;
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+  align-items: center;
+  font-family: Staatliches;
+}
+#logo{
+  position: relative;
+  font-size: 3.5rem;
+  color: white;
+  font-family: Staatliches;
+  text-decoration: none;
+  cursor: pointer;
+  top: 2rem;
+  left: 2rem;
+}
+
+.more{
+  text-align: center;
+}
+#more{
+  padding: .5rem 1rem;
+  font-size: 1.3rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px white solid;
+  color: white;
+  transition: color .5s ease;
+  transition: background-color .5s ease;
+  
+}
+#more:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.description{
+  padding: 2rem;
+  text-align: center;
+  
+}
+.description h3{
+  font-size: 3rem;
+  font-family: Amatic SC;
+}
+.description p{
+  font-family: Amatic Sc;
+  font-size: 1.2rem;
+}
+main{
+  background-color: rgb(255, 244, 223);
+}
+
+.cheescake, .blackforest, .carrotcake,.bananacake{
+  width: 500px;
+  margin: 1rem;
+  height: 400px;
+  transition: opacity 1s ease;
+} 
+
+.cheeseCakeBlackForest, .bananaCakeCarrotCake{
+  display: flex;
+  justify-content: space-evenly;
+}
+.bananaCakeCarrotCake{
+  padding: 2rem 0;
+}
+.bananacake{
+  background-image: url('https://static.fanpage.it/wp-content/uploads/sites/22/2020/02/CARAMEL-BANANA-CAKE-024-1200x1200.jpg');
+  background-size: 100%;
+  object-fit: cover;
+}
+.blackforest{
+  background-image: url('https://3.bp.blogspot.com/-1mlvtAHfYxU/WGMCIdlLuOI/AAAAAAAACKw/ehLubLmJmrYSt5TiW1O5oqaPW9REuGhvwCLcB/s1600/DSC07710.JPG');
+  background-size: 130% 100%;
+  background-position: -65px 0;
+  object-fit: cover;
+}
+.cheescake{
+  background-image: url('https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/11/26/0/FNK_Carrot-Cake-Cheesecakes_s4x3.jpg.rend.hgtvcom.616.462.suffix/1386172247565.jpeg');
+  background-size: 100% 100%;
+  object-fit: cover;
+}
+.carrotcake{
+  background-image: url('https://www.simplyrecipes.com/thmb/BC2ZBdNadWPGxH-es3EaefL09ZM=/2557x1918/smart/filters:no_upscale()/Carrot-Cake-LEAD-3-81e1d3700f0241279f9ba4c2b8b6153c.jpg');
+  background-size: 100% 100%;
+  object-fit: cover;
+}
+#cheesecake, #blackforest, #carrotcake, #bananacake{
+  display: block;
+  text-align: center;
+  transition: background-color 1s ease;
+}
+.recipe, .blforestrecipe,.banrecipe,.carRecipe{
+  position: relative;
+  bottom: 19rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 2px black solid;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.cakes a{
+  text-decoration: none;
+}
+
+.cheescake:hover,.carrotcake:hover,.blackforest:hover, .bananacake:hover{
+  opacity: .5;
+  cursor: pointer;
+}
+.recipe:hover, .blforestrecipe:hover, .banrecipe:hover, .carRecipe:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color ease 1s;
+  transition: color ease 1s;
+}
+
+
+
+.wix{
+  width: 10rem;
+  margin-left: 0;
+  height: 100vh;
+}
+
+.xavi{
+  margin-top: 5rem;
+}
+
+
+
+.contactForm{
+  border: 2px solid black;
+  border-radius: 22px;
+  width: 33rem;
+  display: flex;
+  padding: 1rem;
+}
+.contactForm input, .contactForm select{
+  width: 13rem;
+  margin: 1rem;
+}
+
+footer{
+  height: 70vh;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+footer .footerlogo{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  top: -2rem;
+  left: 10%
+}
+.footernav{
+  position: relative;
+  color: white;
+  line-height: 1.5;
+  left: 65%;
+  top: 5rem;
+  width: 7rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+}
+.footerlist{
+  list-style: none;
+}
+.flogo,.ilogo{
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.closeLogin{
+  display: flex;
+  justify-content: center;
+}
+
+footer .contact{
+  position: relative;
+  color: white;
+  line-height: 1.5;
+  left: 50%;
+  top: -17.5rem;
+  height: 58vh;
+  width: 7rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+footer img:hover{
+  cursor: pointer;
+}
+
+.fa-bars{
+  font-size: 3rem;
+  position:absolute;
+  top: 2.5rem;
+  left: 93%;
+  color: white;
+}
+.fa-bars:hover{
+  cursor: pointer;
+}
+
+.aboutUs{
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  margin-top: 5%;
+}
+
+.aboutUs .aboutDes{
+  width: 30rem;
+}
+
+.aboutDes p{
+  line-height: 2;
+}
+
+.aboutUs img{
+  border-radius: 20px;
+  height: 80vh;
+  width: 25rem;
+}
+
+.block{
+  height: 15rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 1rem;
+}
+
+.block p{
+  line-height: 2;
+}
+
+.block .img1{
+  height: 13rem;
+  width: 10rem;
+  border-radius: 15px;
+  float: left;
+  margin-right: 1rem;
+}
+
+.block .img2{
+  height: 13rem;
+  width: 10rem;
+  border-radius: 15px;
+  float: right;
+  margin-left: 1rem;
+}
+
+
+.mainside{
+  background-color: #383838;
+  height: 100vh;
+  width: 25%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: +2;
+  color: white;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  transition: left 2s ease-out;
+}
+#closeBTN{
+  text-align: left;
+  font-size: 2rem;
+  padding: 7px 0;
+  font-weight:bold;
+}
+#closeBTN:hover{
+  cursor: pointer;
+}
+.mainside a{
+  position: relative;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 7px 0;
+  font-size: 1.2rem;
+}
+
+
+
+hr{
+  margin-left: -1rem;margin-right: -2rem;
+  border: none; height: 2px;
+  color: #001; 
+  background: linear-gradient(to bottom right, navy, darkgreen);
+  width: 99%;
+}
+
+.mainside li{
+  list-style: none;
+}
+
+
+#closeBTN{
+  margin-bottom: -3rem;
+}
+
+.cheesecakeRecipe,.blackforestRecipe{
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.cheesecakeImg{
+  height: 250px;
+  width: 350px;
+  margin: 1rem;
+}
+.ingredientsMethod h2{
+  margin: 1rem 0;
+  font-size: 1.7rem;
+}
+
+.ingredientsMethod{
+  display: flex;
+}
+
+.ingredients{
+  width: 20rem;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+.method{
+  width: 30rem;
+  position: relative;
+  left: 2%;
+  margin-right: 2rem;
+  margin-bottom: 7rem;
+}
+.filler{
+  width: 20rem;
+}
+select{
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+.contactDetails{
+  height: 50vh;
+  width: 35rem;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+
+.contactDetails .description p{
+  font-family: poppins;
+  font-size: .8rem;
+}
+
+.contactDetails{
+  font-family: poppins;
+  text-align: center;
+}
+
+.description h2{
+  margin-top: -1rem;
+  font-size: 1.2rem;
+}
+
+
+.mail{
+  width: 50%;
+  text-align: center;
+}
+
+
+
+.contactMain h1{
+  text-align: center;
+  margin: 1rem;
+}
+
+#contactImg{
+  margin-top: 5rem;
+  font-size: 20rem;
+}
+
+form .submit{
+  position: relative;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  font-size: 1.3rem;
+  margin: 4rem 3rem;
+  background-color: #000000;
+  color: white;
+  border-radius: 30px;
+}
+
+.vibrate{
+  animation: vibrate 500ms ease;
+}
+
+.correct{
+  animation: correct 500ms ease;
+  border-bottom: 1px solid darkgreen;
+}
+
+
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.filler img{
+  height: 300px;
+  width: 350px;
+  position: relative;
+  top: 5rem;
+  margin-left: 30%;
+  margin-top: 1rem;
+}
+
+
+.method h2{
+  text-align: center;
+}
+
+.flex{
+  display: flex;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+
+
+
+@media all and (max-width: 64rem){
+  .list{
+    opacity: 0;
+    pointer-events: none;
+  }
+  .filler, .wix{
+    display: none;
+  }
+  .innerContact{
+    display: block;
+    width: 25rem;
+    height: 80vh;
+  }
+  .loginContainer{
+    width: 20rem;
+    left: 25%;
+  }
+  .innerContact .description{
+    position: relative;
+    left: -9rem;
+    top: -2rem;
+  }
+  .cheeseCakeBlackForest{
+    display:block;
+  }
+  .bananaCakeCarrotCake{
+    display: none;
+  } 
+
+  .cheeseCakeBlackForest h1{
+    text-align: start;
+    margin-left: 200px;
+  }
+  .ingredientsMethod{
+    display: block;
+  }
+  .flex img{
+    height: 200px;
+    width: 300px;
+  }
+  .question{
+    left: 0;
+  }
+  .flex{
+    display: block;
+  }
+  .container{
+    left: 10%;
+  }
+  .footerlogo{
+    left: 0;
+  }
+  .contact{
+    left: 10%;
+  }
+  .contactPage{
+    display: block;
+  }
+}
+.contactMain{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clContainer{
+  width: 30%;
+  position: fixed;
+  top: 35%;
+  left: 35%;
+  background: radial-gradient(circle, white, #aaaaaa);
+  border-radius: 12px;
+  line-height: 1.5;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+.clContainer button{
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 0.2rem .5rem;
+  border-radius: 12px;  
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: .5rem;
+  transition: color .5s ease;
+  transition: background-color 1s ease;
+
+
+}
+.clContainer button:hover{
+  cursor: pointer;
+  background: black;
+  color:#fff;
+}
+
+
+
+@keyframes vibrate{
+  0%,100%{
+    margin-left: 0;
+  }
+  25%{
+    margin-left: 20px;
+  }
+  50%{
+    margin-left: -20px;
+  }
+  75%{
+    margin-left: 20px;
+  }
+}
+
+.green{
+  border-bottom: 1px solid darkgreen;
+}
+
+@keyframes correct{
+  0%,100%{
+    top: 0;
+  }
+  25%{
+    top: 20px;
+  }
+  50%{
+    top: -20px;
+  }
+  75%{
+    top: 20px;
+  }
+}
+
+@keyframes button {
+  0%,100%{
+    background: red;
+  }
+  25%{
+    background: blue;
+  }
+  50%{
+    background: green;
+  }
+  75%{
+    background: yellow;
+  }
+}

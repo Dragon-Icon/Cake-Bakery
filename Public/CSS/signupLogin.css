@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+*{
+    font-family: poppins;
+    margin: 0;
+
+}
+
+body{
+  display: flex;
+}
+
+.fa-bars{
+  font-size: 3rem;
+  position:absolute;
+  top: 0;
+  left: 0;
+  color: black;
+}
+.fa-bars:hover{
+  cursor: pointer;
+}
+
+.back{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 1s ease;
+}
+.goback{
+  display: flex; 
+  align-items: center; 
+  background-color: whtie;
+  transition: background-color 1s ease;
+  height: 100vh;
+}
+
+.goback:hover{
+  background-color:black;
+  color: white;
+  cursor: pointer;
+}
+.goback:hover .back{
+  color: white;
+}
+#show, #showp, #showo{
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  border: solid 1px #000;
+  border-radius:  75% 15%;
+  position: relative;
+  transform: rotate(45deg);
+  position: relative;
+  left: 45%;
+}
+#show::before, #showp::before, #showo::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border: solid 1px #000;
+  border-radius: 50%;
+  background-color: black;
+  left: 2px;
+  top: 2px;
+}
+#show::after, #showp::after, #showo::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 3.5px;
+  top: 3.5px;
+}
+#show:hover, #showp:hover, #showo:hover{
+  cursor: pointer;
+}
+
+
+
+.center{
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+}
+
+.description{
+  background: radial-gradient(circle,#58c2ff 25%, #13a8ff);
+  width: 40%;
+  height: 100vh;
+}
+
+.closeLogin{
+    display: flex;
+    justify-content: center;
+  }
+.signupContainer{
+    width: 50%;
+    padding: .5rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: top 1s ease;
+    z-index: 2;
+}
+
+.cakebakeDes{
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.cakebakeDes p{
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+.cakebakeDes button{
+  background-color: transparent;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  transition: background-color ease-out .5s;
+}
+.cakebakeDes button a{
+  color: yellow;
+  text-decoration: none;
+}
+.cakebakeDes button:hover{
+  background-color: yellow;
+  cursor: pointer;
+}
+.cakebakeDes button:hover a{
+  color: black;
+}
+
+.topLg{
+  display: flex;
+  align-items: center;
+}
+.topLg h3{
+  font-size: 2rem;
+  color: white;
+  font-family: bubblegum sans;
+  margin-left: 3rem;
+}
+
+  input{
+    background: 
+      linear-gradient(to right, yellow 60%, black),
+      linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    border: none;
+  }
+  .signupContainer input{
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .signupContainer button{
+    background: transparent;
+    top: 0;
+    border-radius: 12px;
+    border: 1px solid #2C2C2C;
+    padding: 5px 10px 5px 10px;
+    color: #2C2C2C;
+    font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 25.3px; } h3 { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px;
+    font-size: 11px;
+  }
+  input:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+    outline: none;
+  }
+  
+  .loginContainer{
+    width: 50%;
+    padding: .5rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: top 1s ease;
+    z-index: 2;
+  }
+  .loginContainer input{
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .loginContainer button:hover, .signupContainer button:hover{
+    background-color: #2C2C2C;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  .loginContainer button{
+      background: transparent;
+      top: 0;
+      border-radius: 12px;
+      border: 1px solid #2C2C2C;
+      padding: 5px 10px 5px 10px;
+      color: #2C2C2C;
+      font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 25.3px; } h3 { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px;
+      font-size: 11px;
+    }
+    .loginContainer h1, .signupContainer h1{
+      text-align: center;
+      background: radial-gradient(circle, #23aafa, hotpink);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  .allogin{
+    color: initial;
+    font-size: 11px;
+    text-align: start;
+  }
+  .close{
+    position: relative;
+    left: 8.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: initial;
+  }

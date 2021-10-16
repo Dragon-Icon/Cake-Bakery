@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="CSS/signupLogin.css">
+<link rel="shortcut icon" href="./Img/Logo.png" type="image/x-icon">
+<script src="./External/typed.js-master/lib/typed.min.js"></script>
+<script src="JS/show.js" defer></script>
+<title>The Cake Bakery</title>
+
+<i class="fas fa-bars" onclick="slide()"></i>
+<a href="index" class="back"><div class="goback">&larr;</div></a>
+<div class="center">
+<form class="loginContainer" action="/login" method="POST">
+    <div class="closeLogin">
+        <h1 style="color: rgb(192, 0, 0);"><%= errMsg %></h1>
+    </div>
+    <label for="email"><input type="text" name="email" id="email" placeholder="Email"></label>
+    <label for="password"><input type="password" name="password" id="password" placeholder="Password" style="margin-bottom: -2rem;"></label><input type="checkbox" name="show" id="show"><br><br>
+    <button type="submit">Login</button><br>
+    <a href="forgot" class="allogin">Forgot your password? Reset.</a>
+</form>
+</div>
+<div class="description">
+    <div class="topLg">
+        <img src="IMG/logo.png" alt="logo" width="150" height="150">
+        <h3>The Cake Bakery</h3>
+    </div>
+    <div class="cakebakeDes">
+    <p>The Cake Bakery hand-make the highest quality Black Forest. Using hand-sourced ingredients from the best farmers in New Zealand,
+        head baker Adityaa Mulmi employs traditional The Cake Bakery baking methods that are not commonly practiced in New Zealand. <br><br>
+        
+        The Cake Bakery specialises in Banana Cakes, Carrot Cakes, Cheese Cake, Black Forest. They have recently perfected their recipe for Nepali style Banana Cakes
+        called ‘Banh Mi’ cakes. We supply to cafes, restaurants and hotels across the Hornby and Christchurch areas and will be opening a physical store in Riccarton soon!</p><br>
+        <a href="signup"><button>Don't have an account? Signup</button></a>
+    </div>
+</div>

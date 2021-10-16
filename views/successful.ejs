@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="./Img/Logo.png" type="image/x-icon">
+    <script src="./External/typed.js-master/lib/typed.min.js"></script>
+    <script src="JS/app.js" defer></script>
+    <title>The Cake Bakery</title>
+</head>
+<body>
+    <div class="mainpage">
+        <header>
+            <a href="./index" id="logo">The Cake Bakery</a>
+            <h1 class="display">Welcome <%= name %></h1>
+            <div class="more">
+                <button id="more">Bakery Traditional Cakes</button>
+            </div>
+        </header>
+    
+        <nav>
+            <i class="fas fa-bars" onclick="slide()"></i>
+            <div class="sidebar">
+                <div class="mainside">
+                    <p id="closeBTN">&times</p>
+                    <ul>
+                        <li><a href="./quiz#main" class="list-link">Quiz</a></li>
+                        <li><a href="./index" class="list-link">Home</a></li>
+                        <li><a href="./cake" class="list-link">Cakes</a></li>
+                        <li><a href="./recipe" class="list-link" id="recipeLink" onmouseenter="block()" onmouseleave="none()">Recipe</a></li>
+                        <li><a href="./about" class="list-link">About</a></li>
+                        <li><a href="contact#main">Contact Us</a></li>
+                        <li><a href="<%= LoginLogout %>"><%= LoginLogout %></a></li>
+                        <li><a href="<%=link%>"><%= signup %></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <main id="main">
+        <div class="description">
+            <h3>The Cake Bakery Traditional Cakes</h3>
+            <br><p>The Cake Bakery hand-make the highest quality Black Forest. Using hand-sourced ingredients from the best farmers in New Zealand,<br> head baker Adityaa Mulmi employs traditional The Cake Bakery baking methods that are not commonly practiced in New Zealand.<br><br>
+
+                The Cake Bakery specialises in Banana Cakes, Carrot Cakes, Cheese Cake, Black Forest. They have recently perfected their recipe for Nepali style Banana Cakes <br> called ‘Banh Mi’ cakes.
+                
+                We supply to cafes, restaurants and hotels across the Hornby and Christchurch areas and will be opening a physical store in Riccarton soon!</p>
+        </div>
+        <div class="cakes">
+            
+            <div class="cheeseCakeBlackForest">
+                <div id="cheesecake">
+                        <div class="cheescake" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()"></div>
+                        <h1>Cheesecake</h1>
+                        <a href="./recipetml#cheesecakeRecipe"><button class="recipe" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">Recipe</button></a>
+                </div>
+                <div id="blackforest">
+                    <div class="blackforest" onmouseenter="blenter()" onmouseleave="blleave()"></div>
+                    <h1>Black Forest</h1>
+                    <a href="./recipe#blackforestRecipe"><button class="blforestrecipe" onmouseenter="blenter()" onmouseleave="blleave()">Recipe</button></a>
+                </div>
+            </div>
+            <div class="bananaCakeCarrotCake">
+                <div id="bananacake">
+                    <div class="bananacake" onmouseenter="baenter()" onmouseleave="baleave()"></div>
+                    <h1>Banana Cake</h1>
+                    <a href="./recipe#bananacakeRecipe"><button class="banrecipe" onmouseenter="baenter()" onmouseleave="baleave()">Recipe</button></a>
+                </div>
+                <div id="carrotcake">
+                    <div class="carrotcake" onmouseenter="caenter()" onmouseleave="caleave()"></div>
+                    <h1>Carrot Cake</h1>
+                    <a href="./recipe#carrotcakeRecipe"><button class="carRecipe" onmouseenter="caenter()" onmouseleave="caleave()">Recipe</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footernav">
+            <ul class="footerlist">
+                <li><a href="./index">Home</a></li>
+                <li><a href="cake">Cakes</a></li>
+                <li><a href="./recipe">Recipe</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact"><i class="far fa-user-circle"></i></a></li>
+            </ul>
+            <a href="https://www.facebook.com/adityaa.mulmi"><img src="./Img/facebook-logo.png" alt="facebook-logo" class="flogo"></a>
+            <a href="https://www.instagram.com/_dragon_icon_/"><img src="./Img/instagram-logo.jpg" alt="instagram=logo" class="ilogo"></a>
+        </div>
+        <img class="footerlogo" src="./Img/Logo.png" alt="Logo">
+        <div class="contact">
+            <p>Contact</p>
+            <p>
+                Section 3<br> 48 Taitimu Dr Weymouth 2103<br>Email:<br>mulmiadityaa<br>@gmail.com<br>
+                <a href="tel:+64225864394">phone: 64+<br>
+                22 5864 394</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

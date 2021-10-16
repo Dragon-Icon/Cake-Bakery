@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="./Img/Logo.png" type="image/x-icon">
+    <script src="./External/typed.js-master/lib/typed.min.js"></script>
+    <script src="JS/extranceHome.js" defer></script>
+    <script src="JS/app.js" defer></script>
+
+    <title>The Cake Bakery</title>
+</head>
+<body>
+    <div class="mainpage">
+        <header>
+            <a href="./index" id="logo">The Cake Bakery</a>
+            <h1 class="display"></h1>
+            <div class="more">
+                <button id="more">Bakery Traditional Cakes</button>
+            </div>
+        </header>
+    
+        <nav>
+           <i class="fas fa-bars" onclick="slide()"></i>
+            <div class="sidebar">
+                <div class="mainside">
+                    <p id="closeBTN">&times</p>
+                    <ul>
+                        <li><a href="./quiz#main" class="list-link">Quiz</a></li>
+                        <li><a href="./index" class="list-link">Home</a></li>
+                        <li><a href="./cake" class="list-link">Cakes</a></li>
+                        <li><a href="./recipe" class="list-link" id="recipeLink" onmouseenter="block()" onmouseleave="none()">Recipe</a></li>
+                        <li><a href="./about" class="list-link">About</a></li>
+                        <li><a href="contact">Contact Us</a></li>
+                        <li><a href="<%= LoginLogout %>"><%= LoginLogout %></a></li>
+                        <li><a href="<%=link%>"><%= signup %></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main id="main">
+        <div class="block">
+            <p>
+                <img src="Img/baba.jpg" alt="img" class="img1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid dolorem iure sunt harum illum possimus nihil reiciendis quos, cupiditate nulla natus minima voluptatem explicabo non vitae a animi nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore, ducimus saepe nisi impedit sit, repudiandae doloribus dolore repellat, molestiae quia eligendi illum sint alias ipsum quos! Unde, suscipit adipisci! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo pariatur earum consequuntur dolorum corporis corrupti eveniet, quisquam ipsum tempora iusto, quae, ullam fugit sapiente similique excepturi hic asperiores illum esse.
+            </p>
+        </div>
+        <div class="block">
+            <p>
+                <img src="Img/teej.jpg" alt="img" class="img2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid dolorem iure sunt harum illum possimus nihil reiciendis quos, cupiditate nulla natus minima voluptatem explicabo non vitae a animi nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore, ducimus saepe nisi impedit sit, repudiandae doloribus dolore repellat, molestiae quia eligendi illum sint alias ipsum quos! Unde, suscipit adipisci! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo pariatur earum consequuntur dolorum corporis corrupti eveniet, quisquam ipsum tempora iusto, quae, ullam fugit sapiente similique excepturi hic asperiores illum esse.
+            </p>
+        </div>
+        <div class="block">
+            <p>
+                <img src="Img/red birthday cake.jpg" alt="img" class="img1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid dolorem iure sunt harum illum possimus nihil reiciendis quos, cupiditate nulla natus minima voluptatem explicabo non vitae a animi nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore, ducimus saepe nisi impedit sit, repudiandae doloribus dolore repellat, molestiae quia eligendi illum sint alias ipsum quos! Unde, suscipit adipisci! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo pariatur earum consequuntur dolorum corporis corrupti eveniet, quisquam ipsum tempora iusto, quae, ullam fugit sapiente similique excepturi hic asperiores illum esse.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="footernav">
+            <ul class="footerlist">
+                <li><a href="./index">Home</a></li>
+                <li><a href="cake">Cakes</a></li>
+                <li><a href="./recipe">Recipe</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact"><i class="far fa-user-circle"></i></a></li>
+            </ul>
+            <a href="https://www.facebook.com/adityaa.mulmi"><img src="./Img/facebook-logo.png" alt="facebook-logo" class="flogo"></a>
+            <a href="https://www.instagram.com/_dragon_icon_/"><img src="./Img/instagram-logo.jpg" alt="instagram=logo" class="ilogo"></a>
+        </div>
+        <img class="footerlogo" src="./Img/Logo.png" alt="Logo">
+        <div class="contact">
+            <p>Contact</p>
+            <p>
+                Section 3<br> 48 Taitimu Dr Weymouth 2103<br>Email:<br>mulmiadityaa<br>@gmail.com<br>
+                <a href="tel:+64225864394">phone: 64+<br>
+                22 5864 394</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
